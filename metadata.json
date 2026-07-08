@@ -1,0 +1,6 @@
+{
+  "name": "AHK Mapper & Macro Studio",
+  "description": "An interactive web-based AutoHotkey (AHK) profile designer, timing configurator, and macro editor. Map simple replaces, double presses, triple presses, and press-and-hold triggers, with adjustable timings and full two-way JSON and AHK script exports.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
