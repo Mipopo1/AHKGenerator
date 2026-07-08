@@ -30,9 +30,11 @@ jobs:
           node-version: 20
 
       - name: Install Dependencies
+        working-directory: ./AHKGenerator # Tell npm where package.json is
         run: npm ci
 
       - name: Build Project
+        working-directory: ./AHKGenerator
         run: npm run build
 
       - name: Setup Pages Settings
@@ -41,7 +43,7 @@ jobs:
       - name: Upload Built Files
         uses: actions/upload-pages-artifact@v3
         with:
-          path: './dist'
+          path: './AHKGenerator/dist' # Path to your built directory
 
       - name: Deploy to GitHub Pages
         id: deployment
